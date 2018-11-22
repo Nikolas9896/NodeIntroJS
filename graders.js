@@ -2,11 +2,9 @@ function average(param)
 {
     var lengthParam = param.length;
     var sum=0;
-    for(var i = 0; i<lengthParam; i++)
-    {
-        sum+=param[i];
-        
-    }
+    param.forEach( function(score) {
+       sum+=score; 
+    });
     console.log(sum/lengthParam);
     return (sum/lengthParam);
 }
