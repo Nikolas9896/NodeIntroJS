@@ -5,8 +5,8 @@ function average(param)
     param.forEach( function(score) {
        sum+=score; 
     });
-    console.log(sum/lengthParam);
-    return (sum/lengthParam);
+    console.log(Math.round(sum/lengthParam));
+    return Math.round(sum/lengthParam);
 }
 
 var score = [90, 98, 89, 100, 100, 86, 94];
